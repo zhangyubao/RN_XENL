@@ -1,0 +1,61 @@
+{
+  "需知：": "有些命令在微软终端server是支持的，有些譬如patch 改appversion在自建服务器暂时不支持",
+  "registerUrl": "https://appcenter.ms/cli-login?hostname=cmackingdeMacBook-Pro.local",
+  "REACT-NATIVE-CODE-PUSH-README": "https://github.com/Microsoft/react-native-code-push",
+  "CODE-PUSH-README": "https://github.com/Microsoft/code-push/blob/master/cli/README-cn.md",
+  "accessKey": "21ec514a03b514cffeaa11d80b2a0a37e1426503",
+  "pushKey": {
+    "android": {
+      "ITENLAppsupforAndroid": {
+        "production": "aseukv0J4hJSI0toTvkrP3LY7bgHae7d8412-76d8-410b-98bc-4864a423409f",
+        "staging": "DAfCc_m1RZUw-31L8UTPynPJx7Auae7d8412-76d8-410b-98bc-4864a423409f",
+        "dev": "DAfCc_m1RZUw-31L8UTPynPJx7Auae7d8412-76d8-410b-98bc-4864a423409f"
+      },
+      "ITENLAppsup-android": {
+        "production": "UJs4cfNzr8eGpd5HqE6F3flC8qGOXBcWVYoRO",
+        "staging": "4j8ecCNDxPkfr1OIWf9oXFA8HsHcXBcWVYoRO",
+        "dev": "4j8ecCNDxPkfr1OIWf9oXFA8HsHcXBcWVYoRO"
+      }
+    },
+    "ios": {
+      "ITENLAppsupforIOS": {
+        "production": "4m42mAzVZC6PGzUluVA41lBfHmbGae7d8412-76d8-410b-98bc-4864a423409f",
+        "staging": "73jaqSb38aRV4rjg-OP3ZuZxYVXPae7d8412-76d8-410b-98bc-4864a423409f",
+        "dev": "73jaqSb38aRV4rjg-OP3ZuZxYVXPae7d8412-76d8-410b-98bc-4864a423409f"
+      },
+      "ITENLAppsup-ios": {
+        "production": "RgMQeiKVN9sOghN6ckkL7QrpYAloXBcWVYoRO",
+        "staging": "0oE7ULl9QUXTFOYIkRvu2VhJWPiAXBcWVYoRO",
+        "dev": "0oE7ULl9QUXTFOYIkRvu2VhJWPiAXBcWVYoRO"
+      }
+    }
+  },
+  "cmd": {
+    "code-push login": "登录",
+    "code-push login http://127.0.0.1:3000": "特定地址登录（搭建code-push 服务器）",
+    "code-push logout": "登出",
+    "code-push access-key ls": "列出登陆的token",
+    "code-push access-key rm <accessKye>": "删除某个 access-key",
+    "code-push app add yourappname Android react-native": "添加Android平台应用",
+    "code-push app list": "查看我们添加过的App",
+    "ios": {
+      "code-push deployment ls ITENLAppsupforIOS": "获取特定程序包的状态列表",
+      "code-push deployment ls ITENLAppsupforIOS -k": "获取部署的pushKey",
+      "code-push deployment history ITENLAppsupforIOS Staging": "查看历史发包情况",
+      "code-push release-react ITENLAppsupforIOS ios  --t 1.0.0 --dev false --d Staging --des '1.iOS测试第一次发布更新201807231745' --m true": "发iOS APP版本1.0.0到测试环境",
+      "code-push promote ITENLAppsupforIOS Staging Production --rollout 10": "将测试环境部署到正式环境，并灰度发布百分之十",
+      "code-push promote ITENLAppsupforIOS Staging Production": "将测试环境部署到正式环境，并灰度发布百分之百",
+      "code-push rollback ITENLAppsup-ios Production": "回滚到上一个版本（假设当前v4 将上一个版本(v3)，生成新的行数据v5,使其客户端v4版本用户能检测到v5的更新版本，老用户则直接更新到v5，会跳过v4）"
+    },
+    "android": {
+      "code-push deployment ls ITENLAppsupforAndroid": "获取特定程序包的状态列表",
+      "code-push deployment ls ITENLAppsupforAndroid -k": "获取部署的pushKey",
+      "code-push release-react ITENLAppsupforAndroid android  --t 1.0.0 --dev false --d Staging --des '1.测试第一次发布更新' --m true": "发布更新",
+      "code-push deployment history ITENLAppsupforAndroid Staging": "查看历史发包情况",
+      "code-push patch ITENLAppsupforAndroid Staging -l v1 --disabled true": "禁用该更新patch",
+      "code-push patch ITENLAppsupforAndroid Staging -t '1.0.0 - 1.0.5'": "完成对特定版本的上下兼容",
+      "code-push promote ITENLAppsupforAndroid Staging Production --rollout 10": "将测试环境部署到正式环境，并灰度发布百分之十",
+      "code-push rollback ITENLAppsup-android Production --targetRelease v4": "回滚到 指定 版本"
+    }
+  }
+}

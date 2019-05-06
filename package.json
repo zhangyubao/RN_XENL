@@ -1,0 +1,48 @@
+{
+  "name": "rn_xenl",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-ios": "react-native bundle --entry-file index.js  --platform ios --dev false --bundle-output ./bundles/ios/main.jsbundle --assets-dest ./bundles/ios",
+    "bundle-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform android --dev false --bundle-output ./bundles/android/index.android.bundle --assets-dest ./bundles/android",
+    "test": "jest",
+    "ios": "react-native run-ios",
+    "ios-devices": "xcrun instruments -s",
+    "ios-start": "xcrun instruments -w \"iPhone XS Max (12.0)\"",
+    "ios-build": "cd ios && xcodebuild -scheme RN_XENL -derivedDataPath build",
+    "release-react-android": "code-push release-react ITENLAppsup-android android",
+    "release-react-ios": "code-push release-react ITENLAppsup-ios ios",
+    "android": "react-native run-android",
+    "android-devices": "adb devices",
+    "android-debug-build": "cd ./android && ./gradlew assembleDebug",
+    "android-debug-install": "adb install -r ./android/app/build/outputs/apk/app-debug.apk",
+    "android-release-build": "cd ./android && ./gradlew assembleRelease",
+    "android-release-install": "adb install -r ./android/app/build/outputs/apk/app-release.apk"
+  },
+  "dependencies": {
+    "prop-types": "15.6.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-code-push": "5.3.4",
+    "react-native-lightbox": "0.7.0",
+    "react-native-looped-carousel": "0.1.13",
+    "react-native-page-control": "1.1.1",
+    "react-native-refresh-list-view": "1.0.6",
+    "react-native-root-toast": "2.1.0",
+    "react-native-scrollable-tab-view": "0.8.0",
+    "react-native-section-list-get-item-layout": "2.2.3",
+    "react-native-swiper": "1.5.13",
+    "react-navigation": "1.0.0-beta.19"
+  },
+  "devDependencies": {
+    "babel-jest": "23.0.1",
+    "babel-preset-react-native": "4.0.0",
+    "flow-bin": "^0.67.1",
+    "jest": "23.1.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

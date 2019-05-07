@@ -7,21 +7,16 @@
 ### 已实现基本的热更新，使用微软的 [Microsoft CodePush](https://github.com/microsoft/react-native-code-push) 客户端集成，服务端请自行安装或使用微软Server
 
 
-#### 快照演示
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/snapshot_1.gif" />
+### 演示
+<img src="./snapshot/snapshot_1.gif" />
 
-#### 首页
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/home.png" />
+-------------------
 
-#### 分类
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/classify.png" />
+### 首页
+<img src="./snapshot/home.png" />
 
-#### 我的
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/me.png" />
+-------------------
 
-#### 商品
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/shop2.png" />
+#### 更多快照请[点击](./snapshot/README.md)
 
-#### 登录
-<img src="https://github.com/itenl/RN_XENL/blob/master/snapshot/login.png" />
-
+#### `禁止商业用途 ❤ 研究学习范畴 ❤ 作者保留解释权`

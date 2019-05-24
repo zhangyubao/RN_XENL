@@ -1,5 +1,5 @@
 /**
- * @authors WJ
+ * @authors ITENL
  * @date    2018-04-24 11:35:45
  * 业务域名获取及编码规范
  */

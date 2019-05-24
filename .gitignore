@@ -53,4 +53,7 @@ buck-out/
 */fastlane/screenshots
 
 # Bundle artifact
+bundles/android
+bundles/ios
 *.jsbundle
+lib/*

@@ -1,8 +1,3 @@
-// import { AppRegistry, YellowBox } from 'react-native';
-// import App from './App';
-
-// AppRegistry.registerComponent('app_rn_itenl', () => App);
-
 import React, { PureComponent } from 'react';
 import { AppRegistry, YellowBox, View ,Alert} from 'react-native';
 YellowBox.ignoreWarnings([
@@ -24,8 +19,6 @@ global.closeLoading = false; //所有子页面均可直接调用global.closeLoad
 export default class App extends PureComponent<{}> {
   componentDidMount() {
     self = this;
-    let s1 = self.Loading;
-    //debugger;
     global.showLoading = function() {
       self.Loading.show();
     };
@@ -44,9 +37,7 @@ export default class App extends PureComponent<{}> {
 }
 
 require('ErrorUtils').setGlobalHandler(function (err) {
- 
   Alert.alert("页面走丢了！！！，即将返回上一页")
-  
 });
 
 AppRegistry.registerComponent('RN_XENL', () => App);

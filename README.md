@@ -6,7 +6,6 @@
 
 ### 已实现基本的热更新，使用微软的 [Microsoft CodePush](https://github.com/microsoft/react-native-code-push) 客户端集成，服务端请自行安装或使用微软Server
 
-
 ### 演示
 <img src="./snapshot/snapshot_1.gif" />
 
@@ -18,5 +17,9 @@
 -------------------
 
 #### 更多快照请[点击](./snapshot/README.md)
+
+
+[安装运行问题请戳这里](./help.md)
+
 
 #### `禁止商业用途 ❤ 研究学习范畴 ❤ 作者保留解释权`

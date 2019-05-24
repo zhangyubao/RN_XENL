@@ -28,7 +28,7 @@ let toast,
   });
 class CustomToast extends Toast {
   /**
-   * 长时间提示 FOR WJ
+   * 长时间提示
    *
    * @param {*} content
    * @param {*} opt
@@ -51,7 +51,7 @@ class CustomToast extends Toast {
   };
 
   /**
-   * 短时间提示 FOR WJ
+   * 短时间提示
    *
    * @param {*} content
    * @param {*} opt

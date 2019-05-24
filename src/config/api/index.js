@@ -2,7 +2,7 @@ import appapi from './appapi';
 import apiplus from './apiplus';
 import other from './other';
 /**
- * @authors WJ
+ * @authors ITENL
  * @date    2018-04-24 11:35:45
  * 递归url并在生命周期注入
  */

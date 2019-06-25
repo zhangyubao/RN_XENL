@@ -17,7 +17,7 @@ const filter = url => {
   return `${result[4]}${result[5]}`;
 };
 module.exports = {
-  enable: true,
+  enable: false,
   api: url => {
     return Promise.resolve(apis[filter(url)]);
   }
